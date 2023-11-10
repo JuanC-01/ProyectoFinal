@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.backgroung {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/logo.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-image: url('./img/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+}
+
+.login {
+    margin: auto;
+    width: auto;
+   padding: 100px;
+}
+
+.logo {
+    display: block;
+    margin: 100 auto 20px;
+    width: 170px;
+    height: auto;
+}
+
+/* Default logo size for larger screens */
+@media (min-width: 768px) {
+    .logo {
+        width: 170px;
+    }
+}
+
+/* Adjust logo size for smaller screens (tablets) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+/* Adjust logo size for extra small screens (phones) */
+@media (max-width: 575px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+/*.input {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 45px;
+    align-items: center;
+    margin-top: 50px;
+    margin: 20px 50px 0;
+}*/
+
+.login .input {
+    position: static;
+    right: -370px;
+    bottom: 27px;
+    color: #000000;
+}
+
+.login h2
+{
+font-size: 1.5em;
+text-align: justify;
+margin-bottom: 20 px;
+color: #177dff;
+}
+
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+
+
+button {
+    width: 35%;
+    height: 30px;
+    color: #030303;
+    background-color: rgb(13, 95, 218);
+    border: 2px black #0a0909;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:active {
+    font-size: 25px 5
+}
+
+.login .sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+.login .sign-up a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: 700;
+}
+
+.login .sign-up p {
+    color: #030303;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
